@@ -8,12 +8,13 @@ pipeline {
 		}
 		stage('Install WebServer') {
 		       steps {
-			     sh 'sh /opt/homebrew/bin/brew install httpd'
+			     sh '/opt/homebrew/bin/brew install httpd'
 		       }
 		}
 		stage('Deploy Code') {
 		       steps {
-			     sh 'sudo cp * /var/www/html/'
+				   //Replace with a safe path or preconfigured permissions
+			     sh 'cp * /Users/Shared/html/'
 		       }
 		}
 	}
