@@ -8,7 +8,7 @@ pipeline {
 		}
 		stage('Install WebServer') {
 		       steps {
-			     sh 'sudo apt install apache2 -y'
+			     sh 'brew install httpd'
 		       }
 		}
 		stage('Deploy Code') {
