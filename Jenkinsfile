@@ -8,7 +8,7 @@ pipeline {
 		}
 		stage('Install WebServer') {
 		       steps {
-			     sh 'sh /opt/homebrew/bin/brew install httpd brew install httpd'
+			     sh 'sh '/opt/homebrew/bin/brew install httpd'
 		       }
 		}
 		stage('Deploy Code') {
